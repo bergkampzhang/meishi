@@ -160,7 +160,8 @@ public class ActMain extends ActivityTemplate implements OnClickListener,
         btnAttention = (Button) findViewById(R.id.BtnAttention);
         btnAttention.setOnClickListener(this);
 
-        /*gallery = (Gallery) findViewById(R.id.gallery);
+        
+	/*gallery = (Gallery) findViewById(R.id.gallery);
         gallery.setOnItemClickListener(itemClickListener);
         llGallery = (LinearLayout) findViewById(R.id.llGallery);
         attentionNoLoginView = new MainAttentionNoLoginView(this);
