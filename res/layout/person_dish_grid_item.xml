@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgFood"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/bg_common_pic"
+        android:background="@drawable/bg_main_head"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

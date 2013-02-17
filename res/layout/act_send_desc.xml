@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.0" >
+
+        <com.meishimeike.MainTabWidget.MainNavigateBar
+            android:id="@+id/NAV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            aliangspace:BarText="描述你的美食美刻"
+            aliangspace:HaveLeftButton="true"
+            aliangspace:HaveRightButton="true"
+            aliangspace:NavLeftBackground="@drawable/btn_navigate_back"
+            aliangspace:NavLeftText=""
+            aliangspace:NavRightBackground="@drawable/btn_navigate_close"
+            aliangspace:NavRightText="" >
+        </com.meishimeike.MainTabWidget.MainNavigateBar>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/txtSendTitle"
+            style="@style/Common_content_Edit_Multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="您分享了金牌水煮鱼在俏江南" />
+
+        <ImageView
+            android:id="@+id/imgDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSendTitle"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_divider"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imgDivider"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_send_desc" />
+
+        <EditText
+            android:id="@+id/txtSendDesc"
+            style="@style/Common_content_Edit_Multi"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_below="@+id/imgDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_send_desc"
+            android:hint="限140字内..."
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSendDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical" >
+
+            <TextView
+                android:id="@+id/txt1"
+                style="@style/Common_content_Edit_Single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="它贵吗？" />
+
+            <EditText
+                android:id="@+id/txtPrice"
+                style="@style/Common_content_Edit_Single"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/txt1"
+                android:background="@drawable/bg_send_price"
+                android:gravity="left|center_vertical"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <TextView
+                style="@style/Common_content_Edit_Single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/txtPrice"
+                android:text="元" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/rlPrice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_common_style"
+            android:gravity="center"
+            android:text="好了，我要发布！"
+            android:textColor="@color/btn_common_color_style" />
+    </RelativeLayout>
+
+</LinearLayout>

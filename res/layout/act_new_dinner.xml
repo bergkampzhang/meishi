@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    xmlns:autonavi="http://schemas.android.com/apk/res/com.mapabc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.0" >
+
+        <com.meishimeike.MainTabWidget.MainNavigateBar
+            android:id="@+id/NAV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            aliangspace:BarText="添加新餐馆"
+            aliangspace:HaveLeftButton="false"
+            aliangspace:HaveRightButton="true"
+            aliangspace:NavLeftBackground="@drawable/btn_navigate_back"
+            aliangspace:NavLeftText=""
+            aliangspace:NavRightBackground="@drawable/btn_navigate_ok"
+            aliangspace:NavRightText="" >
+        </com.meishimeike.MainTabWidget.MainNavigateBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/txtDinner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.2"
+                android:background="@drawable/bg_send_search_input"
+                android:hint="填写餐馆名称"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_common_bg"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    style="@style/Common_content_Text_Single"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_new_dinner_map_desc"
+                    android:gravity="center"
+                    android:text="轻触屏幕后，移动大头针到餐厅位置，并保存" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <com.meishimeike.Template.ABCMapView
+                    android:id="@+id/mapView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:apiKey="@string/maps_api_key"
+                    android:clickable="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NavBar">
+        <attr format="string" name="BarText" />
+        <attr format="integer" name="BarBackground" />
+        <attr format="boolean" name="HaveLeftButton" />
+        <attr format="boolean" name="HaveRightButton" />
+        <attr format="string" name="NavRightText" />
+        <attr format="string" name="NavLeftText" />
+        <attr format="integer" name="NavRightBackground" />
+        <attr format="integer" name="NavLeftBackground" />
+    </declare-styleable>
+    <declare-styleable name="BottomBar">
+        <attr format="integer" name="BBarPosition" />
+    </declare-styleable>
+    <declare-styleable name="BottomButton">
+        <attr format="integer" name="ButtonSrc" />
+    </declare-styleable>
+    
+    <declare-styleable name="DishNavBar">
+        <attr format="string" name="DishBarText" />
+        <attr format="integer" name="DishBarBackground" />
+        <attr format="boolean" name="DishHaveLeftButton" />
+        <attr format="boolean" name="DishHaveRightButton" />
+        <attr format="string" name="DishNavRightText" />
+        <attr format="string" name="DishNavLeftText" />
+        <attr format="integer" name="DishNavRightBackground" />
+        <attr format="integer" name="DishNavLeftBackground" />
+    </declare-styleable>
+    <declare-styleable name="DishBottomBar">
+        <attr format="integer" name="DishBBarPosition" />
+    </declare-styleable>
+    <declare-styleable name="DishBottomButton">
+        <attr format="integer" name="DishButtonSrc" />
+    </declare-styleable>
+
+</resources>

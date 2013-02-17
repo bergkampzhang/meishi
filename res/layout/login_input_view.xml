@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/txtName"
+            style="@style/Common_content_Edit_Single_Center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_login_name"
+            android:hint="注册邮箱"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/txtPwd"
+            style="@style/Common_content_Edit_Single_Center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_login_pwd"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_login_style"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/btn_login_color_style" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_common_style"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/btn_common_color_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtFindPwd"
+            style="@style/Common_Title_Text_Single"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left|center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

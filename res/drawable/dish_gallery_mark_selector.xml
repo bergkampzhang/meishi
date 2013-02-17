@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/img_dish_gallery_focus" android:state_checked="true" android:state_enabled="true"/>
+    <item android:drawable="@drawable/img_dish_gallery_nofocus" android:state_checked="false" android:state_enabled="true"/>
+
+</selector>

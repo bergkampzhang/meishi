@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.0" >
+
+        <com.meishimeike.MainTabWidget.MainNavigateBar
+            android:id="@+id/NAV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            aliangspace:BarText="密码找回"
+            aliangspace:HaveLeftButton="false"
+            aliangspace:HaveRightButton="true"
+            aliangspace:NavLeftBackground="@drawable/btn_navigate_add_friend"
+            aliangspace:NavLeftText=""
+            aliangspace:NavRightBackground="@drawable/btn_navigate_close"
+            aliangspace:NavRightText="" >
+        </com.meishimeike.MainTabWidget.MainNavigateBar>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/txtDesc"
+            style="@style/Common_Title_Text_Multi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="美食美刻将发送一封确认邮件到您的注册邮箱，以帮助您找回您的密码。" />
+
+        <EditText
+            android:id="@+id/txtFindPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txtDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_find_pwd_edit"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <Button
+            android:id="@+id/btnFindPwd"
+            android:layout_width="190dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/txtFindPwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_common_style"
+            android:gravity="center"
+            android:text="发送邮件"
+            android:textColor="@color/btn_common_color_style" />
+    </RelativeLayout>
+
+</LinearLayout>

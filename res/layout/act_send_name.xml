@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.0" >
+
+        <com.meishimeike.MainTabWidget.MainNavigateBar
+            android:id="@+id/NAV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            aliangspace:BarText="美食名称"
+            aliangspace:HaveLeftButton="true"
+            aliangspace:HaveRightButton="true"
+            aliangspace:NavLeftBackground="@drawable/btn_navigate_back"
+            aliangspace:NavLeftText=""
+            aliangspace:NavRightBackground="@drawable/btn_navigate_close"
+            aliangspace:NavRightText="" >
+        </com.meishimeike.MainTabWidget.MainNavigateBar>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <EditText
+                    android:id="@+id/txtSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/bg_send_search_input"
+                    android:hint="填写美食名称"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+
+                <ImageView
+                    android:id="@+id/imgSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_send_search_input" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/img_divider" />
+
+            <ListView
+                android:id="@+id/lvFoodName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@drawable/img_divider"
+                android:listSelector="@color/transparent" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/txtAdd"
+                style="@style/Common_Title_Text_Single"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLoad"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_load"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.0" >
+
+        <com.meishimeike.MainTabWidget.MainNavigateBar
+            android:id="@+id/NAV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            aliangspace:BarText="添加好友"
+            aliangspace:HaveLeftButton="false"
+            aliangspace:HaveRightButton="false"
+            aliangspace:NavLeftBackground="@drawable/btn_navigate_back"
+            aliangspace:NavLeftText=""
+            aliangspace:NavRightBackground="@drawable/btn_navigate_setting"
+            aliangspace:NavRightText="" >
+        </com.meishimeike.MainTabWidget.MainNavigateBar>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp"
+                android:visibility="visible" >
+
+                <EditText
+                    android:id="@+id/txtSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/bg_send_search_input"
+                    android:hint="填写用户昵称"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/imgSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1.0"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_send_search_input" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBeforeSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="visible" >
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    layout="@layout/search_user_by_other" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAfterSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/search_user_no_result" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white" >
+
+                <ListView
+                    android:id="@+id/lvUser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:divider="@drawable/img_divider"
+                    android:listSelector="@color/transparent"
+                    android:cacheColorHint="#00000000"
+                    android:visibility="visible" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLoad"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_load"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

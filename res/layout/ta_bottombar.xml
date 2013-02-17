@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/ic_launcher"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.meishimeike.TaTabWidget.TaBottomButton
+        android:id="@+id/homeBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:ButtonSrc="@drawable/ic_launcher" >
+    </com.meishimeike.TaTabWidget.TaBottomButton>
+
+    <com.meishimeike.TaTabWidget.TaBottomButton
+        android:id="@+id/typeBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:ButtonSrc="@drawable/ic_launcher" >
+    </com.meishimeike.TaTabWidget.TaBottomButton>
+
+    <com.meishimeike.TaTabWidget.TaBottomButton
+        android:id="@+id/infoBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:ButtonSrc="@drawable/ic_launcher" >
+    </com.meishimeike.TaTabWidget.TaBottomButton>
+
+    <com.meishimeike.TaTabWidget.TaBottomButton
+        android:id="@+id/buyBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:ButtonSrc="@drawable/ic_launcher" >
+    </com.meishimeike.TaTabWidget.TaBottomButton>
+
+</LinearLayout>

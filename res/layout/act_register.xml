@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.0" >
+
+        <com.meishimeike.MainTabWidget.MainNavigateBar
+            android:id="@+id/NAV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            aliangspace:BarText="注册"
+            aliangspace:HaveLeftButton="true"
+            aliangspace:HaveRightButton="true"
+            aliangspace:NavLeftBackground="@drawable/btn_navigate_back"
+            aliangspace:NavLeftText=""
+            aliangspace:NavRightBackground="@drawable/btn_navigate_setting"
+            aliangspace:NavRightText="" >
+        </com.meishimeike.MainTabWidget.MainNavigateBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_register_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.8"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_register_name"
+                android:hint="注册邮箱"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <EditText
+                android:id="@+id/txtName2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/txtName"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_register_name2"
+                android:hint="昵称"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <EditText
+                android:id="@+id/txtPwd"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/txtName2"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_register_pwd"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <EditText
+                android:id="@+id/txtPwd2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/txtPwd"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_register_pwd2"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.8"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="190dp"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_common_style"
+                android:gravity="center"
+                android:text="完成注册"
+                android:textColor="@color/btn_common_color_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4.5" >
+
+        <com.meishimeike.UserTabWidget.UserNavigateBar
+            android:id="@+id/NAV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            aliangspace:BarText="我的消息"
+            aliangspace:HaveLeftButton="false"
+            aliangspace:HaveRightButton="false"
+            aliangspace:NavLeftBackground="@drawable/btn_navigate_back"
+            aliangspace:NavLeftText=""
+            aliangspace:NavRightBackground="@drawable/btn_navigate_save"
+            aliangspace:NavRightText="" >
+        </com.meishimeike.UserTabWidget.UserNavigateBar>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btnCommend"
+                        style="@style/Common_Title_Text_Single"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/btn_msg_commend"
+                        android:text="评论"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btnMsg"
+                        style="@style/Common_Title_Text_Single"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/btn_msg_msg"
+                        android:text="私信"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.2"
+                android:background="@color/white"
+                android:paddingLeft="10dp" >
+
+                <ListView
+                    android:id="@+id/lvMsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:listSelector="@color/transparent" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLoad"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_load"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4.4" >
+
+        <com.meishimeike.UserTabWidget.UserBottomBar
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            aliangspace:BBarPosition="0" >
+        </com.meishimeike.UserTabWidget.UserBottomBar>
+    </LinearLayout>
+
+</LinearLayout>

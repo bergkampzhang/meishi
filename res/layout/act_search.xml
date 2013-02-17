@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4.5" >
+
+        <com.meishimeike.MainTabWidget.MainNavigateBar
+            android:id="@+id/NAV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            aliangspace:BarText="发现"
+            aliangspace:HaveLeftButton="true"
+            aliangspace:HaveRightButton="false"
+            aliangspace:NavLeftBackground="@drawable/btn_navigate_setting"
+            aliangspace:NavLeftText=""
+            aliangspace:NavRightBackground="@drawable/btn_navigate_add_friend"
+            aliangspace:NavRightText="" >
+        </com.meishimeike.MainTabWidget.MainNavigateBar>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:id="@+id/llContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llBtns"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnSort"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/img_search_sort_focus" />
+
+                <Button
+                    android:id="@+id/btnRim"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/img_search_rim" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:visibility="visible" >
+
+                    <EditText
+                        android:id="@+id/txtSearch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/bg_send_search_input"
+                        android:hint="输入要查询的美食"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+
+                    <ImageView
+                        android:id="@+id/imgSearch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:padding="8dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/img_send_search_input" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRim"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.6" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="30dp"
+                            android:src="@drawable/search_rim_line" />
+
+                        <RadioGroup
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp" >
+
+                            <RadioButton
+                                android:id="@+id/rb1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.0"
+                                android:button="@drawable/search_radio_style"
+                                android:checked="true"
+                                android:gravity="center" />
+
+                            <RadioButton
+                                android:id="@+id/rb2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.0"
+                                android:button="@drawable/search_radio_style"
+                                android:gravity="center" />
+
+                            <RadioButton
+                                android:id="@+id/rb3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.0"
+                                android:button="@drawable/search_radio_style"
+                                android:gravity="center" />
+
+                            <RadioButton
+                                android:id="@+id/rb4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.0"
+                                android:button="@drawable/search_radio_style"
+                                android:gravity="center" />
+
+                            <RadioButton
+                                android:id="@+id/rb5"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.0"
+                                android:button="@drawable/search_radio_style"
+                                android:gravity="center" />
+                        </RadioGroup>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp" >
+
+                        <TextView
+                            android:id="@+id/txt1"
+                            style="@style/person_dish_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="left|center_vertical"
+                            android:text="500m" />
+
+                        <TextView
+                            android:id="@+id/txt2"
+                            style="@style/person_dish_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="left|center_vertical"
+                            android:text="1.5km" />
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            style="@style/person_dish_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="left|center_vertical"
+                            android:text="3km" />
+
+                        <TextView
+                            android:id="@+id/txt4"
+                            style="@style/person_dish_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="left|center_vertical"
+                            android:text="5km" />
+
+                        <TextView
+                            android:id="@+id/txt5"
+                            style="@style/person_dish_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="left|center_vertical"
+                            android:text="中国" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.2"
+                    android:background="@color/white" >
+
+                    <ListView
+                        android:id="@+id/lvSort"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/white"
+                        android:divider="@drawable/img_divider"
+                        android:listSelector="@color/transparent"
+                        android:visibility="visible" >
+                    </ListView>
+
+                    <ListView
+                        android:id="@+id/lvRim"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/white"
+                        android:divider="@drawable/img_divider"
+                        android:listSelector="@color/transparent"
+                        android:visibility="gone" >
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLoad"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_load"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4.4" >
+
+        <com.meishimeike.MainTabWidget.MainBottomBar
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            aliangspace:BBarPosition="1" >
+        </com.meishimeike.MainTabWidget.MainBottomBar>
+    </LinearLayout>
+
+</LinearLayout>

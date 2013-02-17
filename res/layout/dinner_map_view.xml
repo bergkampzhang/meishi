@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autonavi="http://schemas.android.com/apk/res/com.mapabc"
+    android:layout_width="fill_parent"
+    android:layout_height="500dp"
+    android:id="@+id/llMap"
+    android:orientation="vertical" >
+
+    <com.meishimeike.Template.ABCMapView
+        android:id="@+id/itemizedoverlayview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="@string/maps_api_key"
+        android:clickable="true" />
+
+</LinearLayout>

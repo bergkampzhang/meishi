@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.4"
+        android:background="@drawable/bg_dish_detail"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgFood"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_dish_item"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_common_pic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="left|center_vertical" >
+
+                <TextView
+                    android:id="@+id/txtFoodName"
+                    android:textColor="@color/gray_dark"
+                    style="@style/Common_Title_Text_Single"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/txtFoodType"
+                    style="@style/Common_Title_Text_Single"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_dish_type"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="right|center_vertical" >
+
+                <TextView
+                    android:id="@+id/txtDistance"
+                    style="@style/Common_content_Text_Single"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_dish_distance" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="left|center_vertical" >
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    style="@style/Main_Item_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_dish_price"
+                    android:drawablePadding="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="right|center_vertical" >
+
+                <TextView
+                    android:id="@+id/txtDiner"
+                    android:textColor="@color/gray_dark"
+                    style="@style/Main_Item_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_common_dinner"
+                    android:drawablePadding="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/llEat"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_dish_eat"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_dish_eat" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/Common_content_Text_Single"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="1dp"
+                    android:text="收集" />
+
+                <TextView
+                    android:id="@+id/txtEat"
+                    style="@style/Common_Title_Text_Single"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="top|center_horizontal"
+                    android:paddingTop="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLike"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_dish_like" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_dish_like" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/Common_content_Text_Single"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="1dp"
+                    android:text="喜欢" />
+
+                <TextView
+                    android:id="@+id/txtLike"
+                    style="@style/Common_Title_Text_Single"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="top|center_horizontal"
+                    android:paddingTop="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llComment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_dish_comment" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_dish_comment" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/Common_content_Text_Single"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="1dp"
+                    android:text="评论" />
+
+                <TextView
+                    android:id="@+id/txtComment"
+                    style="@style/Common_Title_Text_Single"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="top|center_horizontal"
+                    android:paddingTop="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="2.5"
+        android:background="@drawable/bg_dish_detail"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgHead"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_main_head"
+                android:padding="3dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/txtSign"
+                style="@style/Common_content_Text_Multi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left|top"
+                android:maxLines="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btnAttention"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/btn_common_style"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@color/btn_common_color_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlDesc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlContrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtCtrlMsg"
+            style="@style/Common_content_Text_Single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="显示最近3条动态"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnGrid"
+            android:background="@drawable/img_list_focus" />
+
+        <Button
+            android:id="@+id/btnGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/img_grid" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlContrl" >
+
+        <ListView
+            android:id="@+id/lvDish"
+            android:listSelector="@color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+
+        <GridView
+            android:id="@+id/gvDish"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </GridView>
+    </RelativeLayout>
+
+</RelativeLayout>

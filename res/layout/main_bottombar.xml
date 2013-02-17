@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.meishimeike.MainTabWidget.MainBottomButton
+        android:id="@+id/btnMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:ButtonSrc="@drawable/btn_bottom_main" >
+    </com.meishimeike.MainTabWidget.MainBottomButton>
+
+    <com.meishimeike.MainTabWidget.MainBottomButton
+        android:id="@+id/btnSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:ButtonSrc="@drawable/btn_bottom_search" >
+    </com.meishimeike.MainTabWidget.MainBottomButton>
+
+    <com.meishimeike.MainTabWidget.MainBottomButton
+        android:id="@+id/btnCamera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:ButtonSrc="@drawable/btn_bottom_camera" >
+    </com.meishimeike.MainTabWidget.MainBottomButton>
+
+    <com.meishimeike.MainTabWidget.MainBottomButton
+        android:id="@+id/btnTopic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:ButtonSrc="@drawable/btn_bottom_super" >
+    </com.meishimeike.MainTabWidget.MainBottomButton>
+    
+    <com.meishimeike.MainTabWidget.MainBottomButton
+        android:id="@+id/btnPerson"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:ButtonSrc="@drawable/btn_bottom_person" >
+    </com.meishimeike.MainTabWidget.MainBottomButton>
+
+</LinearLayout>

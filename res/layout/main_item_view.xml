@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp" >
+
+    <LinearLayout
+        android:id="@+id/llMainItemview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.9"
+        android:background="@drawable/bg_main_item"
+        android:orientation="vertical"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgFood"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_common_pic" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" >
+
+            <TextView
+                android:id="@+id/txtFoodName"
+                style="@style/Common_Title_Text_Single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/txtDistance"
+                style="@style/Common_content_Text_Single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/img_main_item_distance" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="left|center_vertical" >
+
+                <TextView
+                    android:id="@+id/txtLike"
+                    style="@style/Main_Item_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_main_item_like"
+                    android:drawablePadding="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="left|center_vertical" >
+
+                <TextView
+                    android:id="@+id/txtEat"
+                    style="@style/Main_Item_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_main_item_eat"
+                    android:drawablePadding="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="left|center_vertical" >
+
+                <TextView
+                    android:id="@+id/txtComment"
+                    style="@style/Main_Item_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:gravity="right|center_vertical" >
+
+                <TextView
+                    android:id="@+id/txtDiner"
+                    style="@style/Main_Item_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_common_dinner"
+                    android:drawablePadding="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPerson"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgHead"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_main_head"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_common_head" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="3dp" >
+
+            <TextView
+                android:id="@+id/txtSign"
+                style="@style/Common_content_Text_Multi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:maxLines="3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">美食美刻</string>
+    <string name="main_title">美食美刻</string>
+    <string name="maps_api_key">2580aafee8c401d9d85c77e983626a42e248916b8af5674051571f178aef860bf859d55a02b60c06</string>
+
+</resources>

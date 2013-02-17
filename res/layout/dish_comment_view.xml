@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flDishComment"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dish_comment"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ListView
+        android:id="@+id/lvComment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:divider="@drawable/img_dish_comment_divider"
+        android:scrollbars="none" >
+    </ListView>
+
+</FrameLayout>

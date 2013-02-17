@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4.5" >
+
+        <com.meishimeike.DishTabWidget.DishNavigateBar
+            android:id="@+id/DishNAV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            aliangspace:DishBarText="@string/main_title"
+            aliangspace:DishHaveLeftButton="false"
+            aliangspace:DishHaveRightButton="false"
+            aliangspace:DishNavLeftBackground="@drawable/btn_navigate_back"
+            aliangspace:DishNavLeftText=""
+            aliangspace:DishNavRightBackground="@drawable/btn_navigate_main"
+            aliangspace:DishNavRightText="" >
+        </com.meishimeike.DishTabWidget.DishNavigateBar>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/sl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlDishInfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="430dp" >
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlComment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlDishInfo" >
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlDishDesc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlComment" >
+                    </RelativeLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llLoad"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_load"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4.4" >
+
+        <com.meishimeike.DishTabWidget.DishBottomBar
+            android:id="@+id/DishBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            aliangspace:DishBBarPosition="0" >
+        </com.meishimeike.DishTabWidget.DishBottomBar>
+    </LinearLayout>
+
+</LinearLayout>

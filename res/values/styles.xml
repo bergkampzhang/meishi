@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NoneAnimation" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="CameraStyle" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Navigate_Title_Text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Navigate_Title_Btn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Common_Title_Text_Single">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="person_name">
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="person_dish_name">
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="Common_Title_Text_Multi">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:gravity">top|left</item>
+    </style>
+
+    <style name="Common_content_Text_Single">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Main_Item_Desc">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Person_Tag">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Common_content_Text_Multi">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">top|left</item>
+    </style>
+
+    <style name="Common_content_Edit_Multi">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">top|left</item>
+    </style>
+
+    <style name="Common_content_Edit_Single">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">top|left</item>
+    </style>
+
+    <style name="Common_content_Edit_Single_Center">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="CusCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+</resources>

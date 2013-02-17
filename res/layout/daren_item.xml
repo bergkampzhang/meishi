@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlHead"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1.0"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imgHead"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.4"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/rlName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/txtName"
+                    style="@style/person_dish_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imgFood1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/imgFood2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/imgFood1"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/imgFood3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/imgFood2"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.2" >
+
+            <TextView
+                android:id="@+id/txtLevel"
+                style="@style/person_dish_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="left|center_vertical"
+                android:singleLine="false"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtSexy"
+                style="@style/person_dish_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.3"
+                android:gravity="left|center_vertical"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txtDesc"
+                style="@style/person_dish_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|top"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnAttention"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_login_style"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:text="已关注"
+                android:textColor="@color/btn_login_color_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aliangspace="http://schemas.android.com/apk/res/com.meishimeike"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.meishimeike.DishTabWidget.DishBottomButton
+        android:id="@+id/btnReport"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:DishButtonSrc="@drawable/btn_bottom_report" >
+    </com.meishimeike.DishTabWidget.DishBottomButton>
+
+    <com.meishimeike.DishTabWidget.DishBottomButton
+        android:id="@+id/btnWhoCome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:DishButtonSrc="@drawable/btn_bottom_who_come" >
+    </com.meishimeike.DishTabWidget.DishBottomButton>
+
+    <com.meishimeike.DishTabWidget.DishBottomButton
+        android:id="@+id/btnGoDinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:DishButtonSrc="@drawable/btn_bottom_go_dinner" >
+    </com.meishimeike.DishTabWidget.DishBottomButton>
+
+    <com.meishimeike.DishTabWidget.DishBottomButton
+        android:id="@+id/btnShare"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        aliangspace:DishButtonSrc="@drawable/btn_bottom_share" >
+    </com.meishimeike.DishTabWidget.DishBottomButton>
+
+</LinearLayout>

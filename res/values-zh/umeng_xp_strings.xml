@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
+	<string name="umeng_xp_size">大小</string>
+	<string name="umeng_xp_action_open">打开</string>
+	<string name="umeng_xp_action_browse">浏览</string>
+	<string name="umeng_xp_action_download">下载</string>
+	<string name="umeng_xp_action_callphone"></string>
+	<string name="umeng_xp_network_break_alert">请连接网络后再尝试！</string>
+	<string name="umeng_xp_more">更多精彩推荐</string>
+	<string name="umeng_xp_back_to_top">回到顶部</string>
+	<string name="umeng_xp_dowloadOrNot">是否下载推荐应用？</string>
+</resources>

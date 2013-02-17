@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgFood"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bg_common_pic"
+            android:background="@drawable/bg_main_head"
+            android:padding="2dp"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.6"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtName"
+            style="@style/person_dish_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="left|center_vertical" />
+
+        <TextView
+            android:id="@+id/txtDistance"
+            style="@style/Main_Item_Desc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/img_main_item_distance"
+            android:drawablePadding="4dp"
+            android:gravity="left|center_vertical" />
+
+        <TextView
+            android:id="@+id/txtDinner"
+            style="@style/Main_Item_Desc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/img_common_dinner"
+            android:drawablePadding="4dp"
+            android:gravity="left|center_vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtLike"
+                style="@style/Main_Item_Desc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="left|center_vertical" />
+
+            <TextView
+                android:id="@+id/txtWant"
+                style="@style/Main_Item_Desc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="left|center_vertical" />
+
+            <TextView
+                android:id="@+id/txtComment"
+                style="@style/Main_Item_Desc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="left|center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
